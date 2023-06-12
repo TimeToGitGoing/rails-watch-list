@@ -1,0 +1,14 @@
+<%= simple_form_with model: @movie do |f| %>
+  <div>
+    <strong><%= f.label :title %></strong> <br>
+    <%= f.input :title %>
+  </div>
+  <div>
+    <strong><%= f.label :overview %></strong> <br>
+    <%= f.input :overview %>
+  </div>
+  <div>
+    <%= f.input :rating %>
+  </div>
+  <%= f.submit :class => 'btn btn-primary'%>
+<% end %>
